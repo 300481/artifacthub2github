@@ -1,0 +1,8 @@
+{{- range $key, $val := .Values }}
+apiVersion: v1
+kind: ConfigMap
+data:
+  {{ $key }}: {{ $val }}
+metadata:
+  name: {{ $key }}-cm
+{{- end }}
