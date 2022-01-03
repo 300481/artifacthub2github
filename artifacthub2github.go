@@ -36,6 +36,8 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 		log.Panic(err)
 	}
 
+	log.Println(string(jsonPayload))
+
 	bytesPayload := bytes.NewReader(jsonPayload)
 
 	req, err := http.NewRequest("POST", "https://api.github.com/repos/"+owner+"/"+repo+"/dispatches", bytesPayload)
