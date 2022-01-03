@@ -2,4 +2,13 @@ apiVersion: v2
 name: testchart
 description: very simple test chart
 type: application
-version: 0.1.0
+version: 0.1.1
+home: https://github.com/300481/artifacthub2github
+sources:
+  - https://github.com/300481/artifacthub2github
+maintainers:
+  - name: "300481"
+annotations:
+  artifacthub.io/changes: |
+    - "[add] extend Chart.yaml with additional information"
+    - "[add] add README.md for this test chart"
