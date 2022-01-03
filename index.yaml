@@ -1,0 +1,22 @@
+apiVersion: v1
+entries:
+  testchart:
+  - annotations:
+      artifacthub.io/changes: |
+        - "[add] extend Chart.yaml with additional information"
+        - "[add] add README.md for this test chart"
+    apiVersion: v2
+    created: "2022-01-03T19:27:07.252480379Z"
+    description: very simple test chart
+    digest: 3e5e22ab9bb334fc1ac0cc79b213674e0be0bfe0a591217e308d2117344016cd
+    home: https://github.com/300481/artifacthub2github
+    maintainers:
+    - name: "300481"
+    name: testchart
+    sources:
+    - https://github.com/300481/artifacthub2github
+    type: application
+    urls:
+    - https://github.com/300481/artifacthub2github/releases/download/testchart-0.1.1/testchart-0.1.1.tgz
+    version: 0.1.1
+generated: "2022-01-03T19:27:07.252486479Z"
