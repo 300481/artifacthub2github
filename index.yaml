@@ -5,6 +5,23 @@ entries:
       artifacthub.io/changes: |
         - "[test] testing the artifact webhook to github"
     apiVersion: v2
+    created: "2022-01-04T13:30:16.57018874Z"
+    description: very simple test chart
+    digest: 4d72ca0049a51877fea21f317c6cdf085143677373e799ca13d62f1d01321087
+    home: https://github.com/300481/artifacthub2github
+    maintainers:
+    - name: "300481"
+    name: testchart
+    sources:
+    - https://github.com/300481/artifacthub2github
+    type: application
+    urls:
+    - https://github.com/300481/artifacthub2github/releases/download/testchart-0.1.4/testchart-0.1.4.tgz
+    version: 0.1.4
+  - annotations:
+      artifacthub.io/changes: |
+        - "[test] testing the artifact webhook to github"
+    apiVersion: v2
     created: "2022-01-04T10:02:26.759691174Z"
     description: very simple test chart
     digest: 25b91b4c228588cd97380c1eb7fb43f20dc5d3a1732cba1dbca6b08fed7157b2
@@ -53,4 +70,4 @@ entries:
     urls:
     - https://github.com/300481/artifacthub2github/releases/download/testchart-0.1.1/testchart-0.1.1.tgz
     version: 0.1.1
-generated: "2022-01-04T10:02:26.759704474Z"
+generated: "2022-01-04T13:30:16.57021474Z"
