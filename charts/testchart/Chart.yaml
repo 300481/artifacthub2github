@@ -2,7 +2,7 @@ apiVersion: v2
 name: testchart
 description: very simple test chart
 type: application
-version: 0.1.5
+version: 0.1.6
 home: https://github.com/300481/artifacthub2github
 sources:
   - https://github.com/300481/artifacthub2github
