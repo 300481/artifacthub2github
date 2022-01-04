@@ -15,13 +15,22 @@ type Payload struct {
 	ClientPayload interface{} `json:"client_payload"`
 }
 
+const ArtifactHubSecretHeader = "X-ArtifactHub-Secret"
+
 // Handle will handle the cloud function call
 func Handle(w http.ResponseWriter, r *http.Request) {
 	token := os.Getenv("TOKEN")
 	owner := os.Getenv("OWNER")
 	repo := os.Getenv("REPO")
+	secret := os.Getenv("SECRET")
 
 	defer r.Body.Close()
+
+	requestSecret := r.Header.Get(ArtifactHubSecretHeader)
+	if secret != requestSecret {
+		log.Println("Webhook secret is not equal with the functions configured secret.")
+		return
+	}
 
 	hookBody, err := io.ReadAll(r.Body)
 	if err != nil {
