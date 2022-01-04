@@ -2,7 +2,7 @@ apiVersion: v2
 name: testchart
 description: very simple test chart
 type: application
-version: 0.1.2
+version: 0.1.3
 home: https://github.com/300481/artifacthub2github
 sources:
   - https://github.com/300481/artifacthub2github
@@ -10,4 +10,4 @@ maintainers:
   - name: "300481"
 annotations:
   artifacthub.io/changes: |
-    - "[test] testing the artifact webhook to github
+    - "[test] testing the artifact webhook to github"
