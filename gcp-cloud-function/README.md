@@ -2,6 +2,8 @@
 
 Google Cloud Function to receive a webhook from Artifact Hub and forward it as a GitHub repository dispatch event 
 
+![](artifacthub2github-drawio.png)
+
 ## needed environment variables
 
 |variable|description                   |
