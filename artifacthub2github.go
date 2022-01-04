@@ -11,8 +11,8 @@ import (
 )
 
 type Payload struct {
-	EventType     string `json:"event_type"`
-	ClientPayload string `json:"client_payload"`
+	EventType     string      `json:"event_type"`
+	ClientPayload interface{} `json:"client_payload"`
 }
 
 // Handle will handle the cloud function call
@@ -21,14 +21,22 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 	owner := os.Getenv("OWNER")
 	repo := os.Getenv("REPO")
 
+	defer r.Body.Close()
+
 	hookBody, err := io.ReadAll(r.Body)
+	if err != nil {
+		log.Panic(err)
+	}
+
+	var ClientPayload interface{}
+	err = json.Unmarshal(hookBody, &ClientPayload)
 	if err != nil {
 		log.Panic(err)
 	}
 
 	payload := Payload{
 		EventType:     "artifacthub",
-		ClientPayload: string(hookBody),
+		ClientPayload: ClientPayload,
 	}
 
 	jsonPayload, err := json.Marshal(payload)
@@ -51,6 +59,7 @@ func Handle(w http.ResponseWriter, r *http.Request) {
 	if err != nil {
 		log.Panic(err)
 	}
+	defer response.Body.Close()
 
 	fmt.Fprint(w, "OK")
 	log.Println(response)
