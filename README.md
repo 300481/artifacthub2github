@@ -1,0 +1,9 @@
+# artifacthub2github
+
+Serverless function for usage on different cloud providers.
+
+Its purpose is to receive a webhook from Artifact Hub and forward it as a GitHub repository dispatch event.
+
+## Provider
+
+*  [Google Cloud Platform Function](https://github.com/300481/artifacthub2github/tree/main/gcp-cloud-function)
