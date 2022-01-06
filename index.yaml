@@ -3,6 +3,23 @@ entries:
   testchart:
   - annotations:
       artifacthub.io/changes: |
+        - "[change] testing the actions-test repo."
+    apiVersion: v2
+    created: "2022-01-06T20:35:27.001178155Z"
+    description: very simple test chart
+    digest: 31df6de657936e505250153aa5d1da76810d044e89240db200ed6e0f5769f6ab
+    home: https://github.com/300481/artifacthub2github
+    maintainers:
+    - name: "300481"
+    name: testchart
+    sources:
+    - https://github.com/300481/artifacthub2github
+    type: application
+    urls:
+    - https://github.com/300481/artifacthub2github/releases/download/testchart-0.2.1/testchart-0.2.1.tgz
+    version: 0.2.1
+  - annotations:
+      artifacthub.io/changes: |
         - "[secret] testing the webhook secret."
     apiVersion: v2
     created: "2022-01-04T20:59:36.7813825Z"
@@ -104,4 +121,4 @@ entries:
     urls:
     - https://github.com/300481/artifacthub2github/releases/download/testchart-0.1.1/testchart-0.1.1.tgz
     version: 0.1.1
-generated: "2022-01-04T20:59:36.7814095Z"
+generated: "2022-01-06T20:35:27.001211556Z"
