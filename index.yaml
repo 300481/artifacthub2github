@@ -3,6 +3,23 @@ entries:
   testchart:
   - annotations:
       artifacthub.io/changes: |
+        - "[change] testing pushover."
+    apiVersion: v2
+    created: "2022-01-06T21:12:51.543559982Z"
+    description: very simple test chart
+    digest: f79b6ebedeb79593b47035b74fbd0786eb19b915da23fe2e6b7c0ef0135d00f3
+    home: https://github.com/300481/artifacthub2github
+    maintainers:
+    - name: "300481"
+    name: testchart
+    sources:
+    - https://github.com/300481/artifacthub2github
+    type: application
+    urls:
+    - https://github.com/300481/artifacthub2github/releases/download/testchart-0.2.2/testchart-0.2.2.tgz
+    version: 0.2.2
+  - annotations:
+      artifacthub.io/changes: |
         - "[change] testing the actions-test repo."
     apiVersion: v2
     created: "2022-01-06T20:35:27.001178155Z"
@@ -121,4 +138,4 @@ entries:
     urls:
     - https://github.com/300481/artifacthub2github/releases/download/testchart-0.1.1/testchart-0.1.1.tgz
     version: 0.1.1
-generated: "2022-01-06T20:35:27.001211556Z"
+generated: "2022-01-06T21:12:51.543610782Z"
