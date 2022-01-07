@@ -5,6 +5,23 @@ entries:
       artifacthub.io/changes: |
         - "[change] testing repo-url."
     apiVersion: v2
+    created: "2022-01-07T07:35:41.513941835Z"
+    description: very simple test chart
+    digest: 7058fe973147ed6e9a57a8670b9576163f0b7733e7cd36568ebf0e83ee108bab
+    home: https://github.com/300481/artifacthub2github
+    maintainers:
+    - name: "300481"
+    name: testchart
+    sources:
+    - https://github.com/300481/artifacthub2github
+    type: application
+    urls:
+    - https://github.com/300481/artifacthub2github/releases/download/testchart-0.2.5/testchart-0.2.5.tgz
+    version: 0.2.5
+  - annotations:
+      artifacthub.io/changes: |
+        - "[change] testing repo-url."
+    apiVersion: v2
     created: "2022-01-07T05:48:08.197617928Z"
     description: very simple test chart
     digest: e15f15181aaa1ca6143f9630c3f9dcfbcc73383278afce131a50a4ecfd6199d9
@@ -172,4 +189,4 @@ entries:
     urls:
     - https://github.com/300481/artifacthub2github/releases/download/testchart-0.1.1/testchart-0.1.1.tgz
     version: 0.1.1
-generated: "2022-01-07T05:48:08.19767713Z"
+generated: "2022-01-07T07:35:41.514041338Z"
