@@ -14,6 +14,4 @@ This [feature](https://github.com/artifacthub/hub/issues/1775), when implemented
 
 ## Example implementation for using this function
 
-[Here](https://github.com/300481/actions-test/tree/main/artifacthub2github) you'll find an example implementation
-
-for the usage of this function.
+[Here](https://github.com/300481/actions-test/tree/main/artifacthub2github) you'll find an example implementation for the usage of this function.
